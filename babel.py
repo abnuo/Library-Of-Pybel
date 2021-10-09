@@ -1,8 +1,11 @@
-from flask import *
+from flask import *"
 from library_of_babel import *
 import html
+import os
 
 app = Flask(__name__)
+heroku = True
+porty = int(os.environ.get('PORT', 5000))
 
 @app.route("/")
 def index():
@@ -31,5 +34,7 @@ def searchy(q):
     only = search(query.ljust(length_of_page))
     stitle = searchTitle(query)
     return f"<a href=\"/book/{containing}\">Page which includes this text</a><br><a href=\"/book/{only}\">Page which includes only this text</a><br><a href=\"/book/{stitle}:0\">Title which contains this text</a>"
-
-app.run(host='localhost', port=8080)
+if heroku == True:
+  app.run(host='0.0.0.0', port=porty)
+else:
+  app.run(host='0.0.0.0', port=8080)
