@@ -1,6 +1,7 @@
 # Library Of Pybel
 ## About
 This is an open source python implementation of the [Library of Babel](https://libraryofbabel.info).
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 ## Functionality
 ### Javascript Implementation
 The Javascript implementation of the Library of Babel can be found [here](https://cakenggt.github.io/Library-Of-Pybel/). The text and addresses generated will not be the same between the Python implementation and this one. The source code for this JS implementation is hosted in the gh-pages branch. There is a search box and an address selector.
