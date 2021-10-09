@@ -1,7 +1,12 @@
 {
     "name": "Library-Of-Pybel",
     "description": "This is an open source python implementation of the Library of Babel.",
-    "repository": "https://github.com/abnuo/Library-Of-Pybel",
+    "repository": "https://github.com/cakenggt/Library-Of-Pybel",
+    "logo": "https://example.com/example.png",
+    "keywords": [
+        "libraryofbabel",
+        "python"
+    ],
     "buildpacks": [
     {
       "url": "https://github.com/heroku/heroku-buildpack-python"
