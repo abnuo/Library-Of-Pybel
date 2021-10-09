@@ -17,7 +17,7 @@ def book(name):
       title = getTitle(name)
       page = getPage(name)
       firstpage = "/book/" + name[0:name.rfind(":")] + ":0"
-      lastpage = "/book/" + poop[0:poop.rfind(":")] + ":410"
+      lastpage = "/book/" + name[0:name.rfind(":")] + ":410"
       prevpage = "/book/" + name[0:name.rfind(":")] + ":" + str(int(name[name.rfind(":") + 1:len(name)])-1)
       nextpage = "/book/" + name[0:name.rfind(":")] + ":" + str(int(name[name.rfind(":") + 1:len(name)])+1)
       randpage = "/book/" + name[0:name.rfind(":")] + ":" + str(random.randint(0, 410))
