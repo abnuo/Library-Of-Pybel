@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Title</title>
+	<style type="text/css">
+	/* CSS styles here... */
+	</style>
+	</head>
+	
+	<body>
+	
+	<h1>Library Of Pybel</h1>
+	<input type="text" id="hex" name="hex"><input type="number" id="wall" name="wall" min="0" max="5"><input type="number" id="shelf" name="shelf" min="0" max="6"><input type="number" id="vol" name="vol" min="0" max="33"><input type="number" id="page" name="page" min="0" max="411">
+	<button onclick="go()">Go</button>
+	<script>
+    function go() {
+	    var hex = document.getElementById("hex").value.toUpperCase();
+	    var wall = document.getElementById("wall").value;
+	    var shelf = document.getElementById("shelf").value;
+	    var volume = document.getElementById("vol").value;
+	    var page = document.getElementById("vol").value;
+	    document.location.href = "/book/" + hex + ":" + wall + ":" + shelf + ":" + volume + ":" + page;
+	  }
+	</script>
+	
+	</body>
+	
+</html>
